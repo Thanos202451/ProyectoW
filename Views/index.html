@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Captcha</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="../css/style.css" as="style">
+    <link href="../css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <main class="contenedor">
+        <section>
+            <form class="formulario" id="formulario">
+         <legend>Aplica llenando todos los campos</legend>
+         <fieldset>
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label>Carnet</label>
+                    <input class="input-text" type="text" id="carnet" placeholder="Carnet">
+                </div>
+                <div class="campo">
+                    <label>Primer Nombre</label>
+                    <input class="input-text" type="text" id="1nombre" placeholder="Primer Nombre">
+                </div>
+                <div class="campo">
+                    <label>Segundo Nombre</label>
+                    <input class="input-text" type="text" id="2nombre" placeholder="Segundo Nombre">
+                </div>                
+                <div class="campo">
+                    <label>Fecha de nacimiento</label>
+                    <input class="input-text" type="text"  id="fecha" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="campo">
+                    <label>Email</label>
+                    <input class="input-text" type="text" id="Email" placeholder="Email">
+                </div>
+                <div class="campo">
+                    <label>Sexo</label>
+                    <input class="input-text" type="text" id="sexo" placeholder="Sexo">
+                </div>
+                <div class="campo">
+                    <label>DPI</label>
+                    <input class="input-text" type="text" id="dpi" placeholder="DPI">
+                </div>
+                <div class="campo">
+                    <label>Pasaporte</label>
+                    <input class="input-text" type="number" id="pasaporte" placeholder="Pasaporte">
+                </div>
+                <div class="campo">
+                    <label>Pais</label>
+                    <select class="input-text" id="pais" name="pais">
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Belice">Belice</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Salvador">El salvador</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Costa">Costa Rica</option>
+                        <option value="Panama">Panama</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Direccion</label>
+                    <input class="input-text" type="text" id="direccion" placeholder="Direccion">
+                </div>
+
+            </div>
+        
+
+            <div class="alinear-derecha flex">
+          <input class="boton__enviar" type="submit" value="Enviar" > 
+            </div>
+         </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Todos los derechos reservados</p>
+
+</footer>
+<script src="funcion.js"></script>
+</body>
+</html>

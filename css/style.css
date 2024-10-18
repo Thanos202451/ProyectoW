@@ -1,0 +1,113 @@
+:root{
+    --blanco: #f7f7f7;
+    --azul: #1b17f0;
+    --gris: #0a5397;
+    --verde: #15ee0e;
+    --grisclaro: #DFE9F3;
+    --negro: #000407;
+}
+html{
+    font-size: 65.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+/*Elimina bordes*/
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100% ) ;
+}
+.contenedor{
+    max-width:120rem;
+    margin: 0 auto;
+}
+.boton{
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width:auto;
+    text-align: center;
+    border: none;
+}
+.boton__enviar{
+    background-color: var(--verde);
+    color:var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width:auto;
+    text-align: center;
+    border: none;
+}
+.boton:hover{
+ cursor:pointer
+}
+.boton__enviar:hover{
+    cursor: pointer;
+}
+.flex {
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+
+.formulario{
+    background-color: var(--gris);
+    width: min( 60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--blanco);
+}
+.contenedor-campos{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 1rem;
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.campo label{
+    color: var(--negro);
+    font-weight:bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.campo textarea{
+    height: 20rem;
+}
+.campo iframe{
+    height: 30rem;
+}
+.input-text{
+    width:100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.vista-preliminar{
+    width:100%;
+    border: none;
+    border-radius: .5rem;
+}
+.footer{
+    text-align: center;
+}
